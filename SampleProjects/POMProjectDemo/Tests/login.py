@@ -9,6 +9,7 @@ from SampleProjects.POMProjectDemo.Pages.homePage import HomePage
 import HtmlTestRunner
 
 
+# Loggining test & assertion actions
 class LoginTest(unittest.TestCase):
 
     @classmethod
@@ -45,7 +46,7 @@ class LoginTest(unittest.TestCase):
         message = driver.find_element_by_xpath("").text
         self.assertEqual(message, "Invalid credentials")
 
-        time.sleep(2)
+        time.sleep(1)
 
     @classmethod
     def tearDownClass(cls):
